@@ -27,15 +27,15 @@ import Mantras08 from "../../../assets/comics/mantras/mantras_08.jpg";
 import Mantras09 from "../../../assets/comics/mantras/mantras_09.jpg";
 import Mantras10 from "../../../assets/comics/mantras/mantras_10.jpg";
 import MyGirlTheVoidCover from "../../../assets/comics/my-girl-the-void/mgtv_01.jpg";
-import MyGirlTheVoid02 from "../../../assets/comics/my-girl-the-void/mgtv_02.png";
-import MyGirlTheVoid03 from "../../../assets/comics/my-girl-the-void/mgtv_03.png";
-import MyGirlTheVoid04 from "../../../assets/comics/my-girl-the-void/mgtv_04.png";
-import MyGirlTheVoid05 from "../../../assets/comics/my-girl-the-void/mgtv_05.png";
-import MyGirlTheVoid06 from "../../../assets/comics/my-girl-the-void/mgtv_06.png";
-import MyGirlTheVoid07 from "../../../assets/comics/my-girl-the-void/mgtv_07.png";
-import MyGirlTheVoid08 from "../../../assets/comics/my-girl-the-void/mgtv_08.png";
-import MyGirlTheVoid09 from "../../../assets/comics/my-girl-the-void/mgtv_09.png";
-import MyGirlTheVoid10 from "../../../assets/comics/my-girl-the-void/mgtv_10.png";
+import MyGirlTheVoid02 from "../../../assets/comics/my-girl-the-void/mgtv_02.jpg";
+import MyGirlTheVoid03 from "../../../assets/comics/my-girl-the-void/mgtv_03.jpg";
+import MyGirlTheVoid04 from "../../../assets/comics/my-girl-the-void/mgtv_04.jpg";
+import MyGirlTheVoid05 from "../../../assets/comics/my-girl-the-void/mgtv_05.jpg";
+import MyGirlTheVoid06 from "../../../assets/comics/my-girl-the-void/mgtv_06.jpg";
+import MyGirlTheVoid07 from "../../../assets/comics/my-girl-the-void/mgtv_07.jpg";
+import MyGirlTheVoid08 from "../../../assets/comics/my-girl-the-void/mgtv_08.jpg";
+import MyGirlTheVoid09 from "../../../assets/comics/my-girl-the-void/mgtv_09.jpg";
+import MyGirlTheVoid10 from "../../../assets/comics/my-girl-the-void/mgtv_10.jpg";
 import classes from '../comics.module.css'
 
 const comicConfigs: ComicThumbnailProps[] = [
