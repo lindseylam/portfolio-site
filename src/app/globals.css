@@ -19,7 +19,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-ibm-plex-mono);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -40,3 +40,45 @@ a {
     color-scheme: dark;
   }
 }
+
+.comic-overlay {
+  opacity: 0 !important;
+}
+
+*:hover > .comic-overlay {
+  opacity: 1 !important;
+}
+
+/* Override Mantine NavLink hover styles
+[data-mantine-component="NavLink"] {
+  --nl-hover: transparent !important;
+  --nl-bg: transparent !important;
+  --nl-color: #ff6b6b !important;
+  color: #ff6b6b !important;
+}
+
+[data-mantine-component="NavLink"] .mantine-NavLink-label {
+  color: #ff6b6b !important;
+}
+
+[data-mantine-component="NavLink"]:hover {
+  background-color: transparent !important;
+  color: #ff5252 !important;
+}
+
+[data-mantine-component="NavLink"]:hover .mantine-NavLink-label {
+  color: #ff5252 !important;
+}
+
+[data-mantine-component="NavLink"][data-active] {
+  background-color: transparent !important;
+  color: #ff5252 !important;
+}
+
+[data-mantine-component="NavLink"][data-active] .mantine-NavLink-label {
+  color: #ff5252 !important;
+}
+ */
+
+
+

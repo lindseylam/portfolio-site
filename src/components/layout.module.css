@@ -1,0 +1,22 @@
+.label {
+  color: var(--mantine-color-gray-5);
+}
+
+.root:hover {
+  background-color: transparent !important;
+}
+
+.root:hover .label {
+  color: black !important;
+}
+
+.root[data-active] {
+  background-color: transparent !important;
+  font-weight: 600 !important;
+}
+
+.root[data-active] .label {
+  color: black !important;
+  font-weight: 600 !important;
+} 
+
