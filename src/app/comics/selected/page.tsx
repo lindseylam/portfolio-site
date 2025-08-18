@@ -35,7 +35,6 @@ import MyGirlTheVoid06 from "../../../assets/comics/my-girl-the-void/mgtv_06.jpg
 import MyGirlTheVoid07 from "../../../assets/comics/my-girl-the-void/mgtv_07.jpg";
 import MyGirlTheVoid08 from "../../../assets/comics/my-girl-the-void/mgtv_08.jpg";
 import MyGirlTheVoid09 from "../../../assets/comics/my-girl-the-void/mgtv_09.jpg";
-import MyGirlTheVoid10 from "../../../assets/comics/my-girl-the-void/mgtv_10.jpg";
 import classes from '../comics.module.css'
 
 const comicConfigs: ComicThumbnailProps[] = [
@@ -48,7 +47,7 @@ const comicConfigs: ComicThumbnailProps[] = [
     {
         title: "My Girl, The Void",
         cover: MyGirlTheVoidCover,
-        images: [MyGirlTheVoidCover, MyGirlTheVoid02, MyGirlTheVoid03, MyGirlTheVoid04, MyGirlTheVoid05, MyGirlTheVoid06, MyGirlTheVoid07, MyGirlTheVoid08, MyGirlTheVoid09, MyGirlTheVoid10],
+        images: [MyGirlTheVoidCover, MyGirlTheVoid02, MyGirlTheVoid03, MyGirlTheVoid04, MyGirlTheVoid05, MyGirlTheVoid06, MyGirlTheVoid07, MyGirlTheVoid08, MyGirlTheVoid09],
         description: "2024. A 9-page comic about a new girlfriend who happens to be a void entity.",
     },
     {
