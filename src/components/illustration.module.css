@@ -1,15 +1,24 @@
 .controls button{
     background-color: white;
-    opacity: 0.5;
+    opacity: 0;
     transition: opacity 150ms ease;
     border: none;
 }
 
 .root:hover .controls button {
-    opacity: .7;
+    opacity: .3;
 }
 
 .control[data-inactive] button {
     opacity: 0;
     cursor: default;
+}
+
+@media (max-width: 500px) {
+    .controls button {
+        opacity: 0;
+    }
+    .root:hover .controls button {
+        opacity: 0;
+    }
 }
