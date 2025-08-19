@@ -2,6 +2,7 @@ import { Carousel } from "@mantine/carousel";
 import { Box, CloseButton } from "@mantine/core";
 import { useModals } from "@mantine/modals";
 import Image, { StaticImageData } from "next/image";
+import classes from './illustration.module.css';
 
 interface IllustrationSlideshowProps {
     title: string;
@@ -15,6 +16,7 @@ export const IllustrationSlideshow = (props: IllustrationSlideshowProps) => {
     return (<Box h={'100vh'} w={'100%'} style={{position: 'relative', display: 'flex', }}>
         <CloseButton style={{position: 'absolute', top: 0, right: 0, zIndex: 1000}} onClick={() => modals.closeAll()} variant="transparent" size="lg" />
         <Carousel 
+            classNames={classes}
             controlSize={30}
             flex={1}
             height={'100%'}
