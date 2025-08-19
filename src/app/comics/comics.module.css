@@ -13,3 +13,12 @@
     opacity: 0;
     cursor: default;
 }
+
+@media (max-width: 500px) {
+    .controls button {
+        opacity: 0;
+    }
+    .root:hover .controls button {
+        opacity: 0;
+    }
+}
