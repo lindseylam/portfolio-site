@@ -26,7 +26,8 @@ import Mantras07 from "../../../assets/comics/mantras/mantras_07.jpg";
 import Mantras08 from "../../../assets/comics/mantras/mantras_08.jpg";
 import Mantras09 from "../../../assets/comics/mantras/mantras_09.jpg";
 import Mantras10 from "../../../assets/comics/mantras/mantras_10.jpg";
-import MyGirlTheVoidCover from "../../../assets/comics/my-girl-the-void/mgtv_01.jpg";
+import MyGirlTheVoidCover from "../../../assets/comics/my-girl-the-void/mgtv_cover.jpg";
+import MyGirlTheVoid01 from "../../../assets/comics/my-girl-the-void/mgtv_01.jpg";
 import MyGirlTheVoid02 from "../../../assets/comics/my-girl-the-void/mgtv_02.jpg";
 import MyGirlTheVoid03 from "../../../assets/comics/my-girl-the-void/mgtv_03.jpg";
 import MyGirlTheVoid04 from "../../../assets/comics/my-girl-the-void/mgtv_04.jpg";
@@ -47,7 +48,7 @@ const comicConfigs: ComicThumbnailProps[] = [
     {
         title: "My Girl, The Void",
         cover: MyGirlTheVoidCover,
-        images: [MyGirlTheVoidCover, MyGirlTheVoid02, MyGirlTheVoid03, MyGirlTheVoid04, MyGirlTheVoid05, MyGirlTheVoid06, MyGirlTheVoid07, MyGirlTheVoid08, MyGirlTheVoid09],
+        images: [MyGirlTheVoidCover, MyGirlTheVoid01, MyGirlTheVoid02, MyGirlTheVoid03, MyGirlTheVoid04, MyGirlTheVoid05, MyGirlTheVoid06, MyGirlTheVoid07, MyGirlTheVoid08, MyGirlTheVoid09],
         description: "2024. A 9-page comic about a new girlfriend who happens to be a void entity.",
     },
     {

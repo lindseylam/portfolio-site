@@ -1,21 +1,14 @@
 .controls {
     transition: opacity 150ms ease;
     opacity: 0;
-
 }
 
-.root {
-    &:hover {
-        .controls {
-            opacity: .5;
-            border: 'none'
-        }
-    }
+.root:hover .controls {
+    opacity: .5;
+    border: none;
 }
 
-.control {
-    &[data-inactive] {
-        opacity: 0;
-        cursor: default;
-    }
+.control[data-inactive] {
+    opacity: 0;
+    cursor: default;
 }
