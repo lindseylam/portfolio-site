@@ -5,12 +5,12 @@ import { useDisclosure } from "@mantine/hooks";
 import { ModalsProvider } from '@mantine/modals';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import classes from './layout.module.css';
+import NavlinkClasses from './navlink.module.css';
 
 const theme = createTheme({
     components: {
         NavLink: NavLink.extend({
-            classNames: classes,
+            classNames: NavlinkClasses,
         }),
         Anchor: Anchor.extend({
             styles: {
@@ -32,7 +32,6 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     return (<MantineProvider theme={theme}>
         <ModalsProvider>
         <AppShell
-            bg="#fffcf5"
             padding="md"
             header={{ height: { base: 60, sm: 0 } }}
             navbar={{
@@ -40,9 +39,13 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                 breakpoint: 'sm',
                 collapsed: { mobile: !opened },
             }}
+            styles={{
+                main: { backgroundColor: "var(--background)", color: "var(--foreground)" },
+                navbar: { backgroundColor: "var(--background)", color: "var(--foreground)" },
+                header: { backgroundColor: "var(--background)", color: "var(--foreground)" }
+            }}
         >
             <AppShell.Header withBorder={false}             
-            bg="#fffcf5"
             >
                 <Group p="md" hiddenFrom="sm" justify="space-between">
                     <Link href="/">
@@ -56,7 +59,6 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                 </Group>
             </AppShell.Header>
             <AppShell.Navbar withBorder={false} p="md" 
-            bg="#fffcf5"
             >
                 <Stack pt="xl" gap="md">
                     <Box pl="sm" visibleFrom="sm">

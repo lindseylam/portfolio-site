@@ -1,0 +1,35 @@
+.label {
+  color: var(--mantine-color-gray-5);
+}
+
+.root:hover {
+  background-color: transparent !important;
+}
+
+.root:hover .label {
+  color: var(--mantine-color-gray-8) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .root:hover .label {
+    color: var(--mantine-color-gray-3) !important;
+  }
+}
+
+.root[data-active] {
+  background-color: transparent !important;
+  font-weight: 600 !important;
+}
+
+.root[data-active] .label {
+  color: var(--mantine-color-gray-8) !important;
+  font-weight: 600 !important;
+} 
+
+@media (prefers-color-scheme: dark) {
+  .root[data-active] .label {
+    color: var(--mantine-color-gray-3) !important;
+  }
+}
+
+
