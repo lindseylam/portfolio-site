@@ -7,6 +7,7 @@ import Home05 from "../assets/home/home_05.jpg";
 import Home07 from "../assets/home/home_07.jpg";
 import Home08 from "../assets/home/home_08.jpg";
 import Home09 from "../assets/home/home_09.jpg";
+import { useColorScheme } from "@mantine/hooks";
 
 const illustrationList = [
   Home04,
@@ -23,6 +24,8 @@ export default function Home() {
       <IllustrationThumbnail key={index} title={`${index + 1}`} image={image} noHover />
     ))
   }
+  const colorScheme = useColorScheme();
+  console.log(colorScheme);
   return (
     <MasonryPage items={getIllustrationThumbnails()} />
   );

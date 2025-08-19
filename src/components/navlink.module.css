@@ -7,12 +7,12 @@
 }
 
 .root:hover .label {
-  color: var(--mantine-color-gray-8) !important;
+  color: var(--mantine-color-red-6) !important;
 }
 
 @media (prefers-color-scheme: dark) {
   .root:hover .label {
-    color: var(--mantine-color-gray-3) !important;
+    color: var(--mantine-color-red-6) !important;
   }
 }
 
