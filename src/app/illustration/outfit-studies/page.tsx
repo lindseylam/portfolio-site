@@ -1,22 +1,21 @@
 'use client'
 
-import { IllustrationThumbnail, IllustrationThumbnailProps } from "@/components/IllustrationThumbnail"
-import MasonryPage from "@/components/MasonryPage"
+import { IllustrationThumbnail, IllustrationThumbnailProps } from "@/components/IllustrationThumbnail";
+import MasonryPage from "@/components/MasonryPage";
 import OutfitStudy01 from '../../../assets/illustration/outfits/outfits_01.jpg';
+import OutfitStudy10 from '../../../assets/illustration/outfits/outfits_010.jpg';
 import OutfitStudy02 from '../../../assets/illustration/outfits/outfits_02.jpg';
 import OutfitStudy03 from '../../../assets/illustration/outfits/outfits_03.jpg';
 import OutfitStudy04 from '../../../assets/illustration/outfits/outfits_04.jpg';
 import OutfitStudy05 from '../../../assets/illustration/outfits/outfits_05.jpg';
 import OutfitStudy06 from '../../../assets/illustration/outfits/outfits_06.jpg';
-import OutfitStudy07 from '../../../assets/illustration/outfits/outfits_07.jpg';
 import OutfitStudy08 from '../../../assets/illustration/outfits/outfits_08.jpg';
 import OutfitStudy09 from '../../../assets/illustration/outfits/outfits_09.jpg';
-import OutfitStudy10 from '../../../assets/illustration/outfits/outfits_010.jpg';
 
 export default function OutfitStudiesPage() {
     const getIllustrationThumbnails = () => {
         return illustrationConfigs.map((config, index) => (
-            <IllustrationThumbnail {...config} images={illustrationConfigs.map((config) => config.image)} index={index} />
+            <IllustrationThumbnail {...config} images={illustrationConfigs.map((config) => config.image)} index={index} key={index} />
         ))
     }
     return <MasonryPage items={getIllustrationThumbnails()} />

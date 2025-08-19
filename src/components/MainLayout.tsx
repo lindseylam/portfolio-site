@@ -1,11 +1,11 @@
 'use client'
 
-import { Anchor, AppShell, Box, Burger, createTheme, Group, MantineProvider, MantineTheme, NavLink, NavLinkProps, Stack, Title } from '@mantine/core';
+import { Anchor, AppShell, Box, Burger, createTheme, Group, MantineProvider, NavLink, Stack, Title } from '@mantine/core';
 import { useDisclosure } from "@mantine/hooks";
-import classes from './layout.module.css';
-import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
 import { ModalsProvider } from '@mantine/modals';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import classes from './layout.module.css';
 
 const theme = createTheme({
     components: {
@@ -74,16 +74,16 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                                 label={config.label}
                                 rightSection={null}
                                 opened={true}
-                                children={config.subLinks?.map((subLink) => (
-                                    <NavLink key={subLink.href} href={subLink.href} label={subLink.label} active={isActive(subLink.href)} />
-                                ))}
-                                />
+                                >
+                                    {config.subLinks?.map((subLink) => (
+                                        <NavLink key={subLink.href} href={subLink.href} label={subLink.label} active={isActive(subLink.href)} style={{fontFamily: "var(--font-ibm-plex-mono)"}} />
+                                    ))}
+                                </NavLink>
                             ))
                         }
                     </Stack>
                 </Stack>
             </AppShell.Navbar>
-
             <AppShell.Main>{children}</AppShell.Main>
         </AppShell>
         </ModalsProvider>

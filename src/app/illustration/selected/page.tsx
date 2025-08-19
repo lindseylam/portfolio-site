@@ -12,7 +12,7 @@ export default function SelectedIllustrationsPage() {
 
     const getIllustrationThumbnails = () => {
         return illustrationConfigs.map((config, index) => (
-            <IllustrationThumbnail {...config} images={illustrationConfigs.map((config) => config.image)} index={index} />
+            <IllustrationThumbnail {...config} images={illustrationConfigs.map((config) => config.image)} index={index} key={index} />
         ))
     }
     return <MasonryPage items={getIllustrationThumbnails()} />

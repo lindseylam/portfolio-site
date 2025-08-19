@@ -1,5 +1,5 @@
 import { Carousel } from "@mantine/carousel";
-import { Box, CloseButton, Text } from "@mantine/core";
+import { Box, CloseButton } from "@mantine/core";
 import { useModals } from "@mantine/modals";
 import Image, { StaticImageData } from "next/image";
 import classes from './illustration.module.css';

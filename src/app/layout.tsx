@@ -28,7 +28,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  //const [opened, { toggle }] = useDisclosure(false);
   return (
     <html lang="en" {...mantineHtmlProps}>
       <head>

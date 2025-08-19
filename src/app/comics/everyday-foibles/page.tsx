@@ -9,7 +9,7 @@ import EverydayFoibles03 from '../../../assets/comics/everyday-foibles/everyday_
 export default function EverydayFoiblesPage() {
     const getComicThumbnails = () => {
         return comicConfigs.map((config, index) => (
-            <IllustrationThumbnail {...config} images={comicConfigs.map((config) => config.image)} index={index} />
+            <IllustrationThumbnail {...config} images={comicConfigs.map((config) => config.image)} index={index} key={index} />
         ))
     }
     return <MasonryPage items={getComicThumbnails()} />

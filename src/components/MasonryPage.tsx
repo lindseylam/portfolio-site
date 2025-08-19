@@ -3,7 +3,7 @@ import { Container, Box } from "@mantine/core";
 import { useState, useRef, useEffect } from "react";
 
 interface MasonryPageProps {
-    items: any[];
+    items: React.ReactNode[];
 }
 
 export default function MasonryPage({items}: MasonryPageProps) {

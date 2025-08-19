@@ -1,15 +1,12 @@
 "use client";
-import { Box, Container, Grid } from "@mantine/core";
-import Image from "next/image";
+import { IllustrationThumbnail } from "@/components/IllustrationThumbnail";
+import MasonryPage from "@/components/MasonryPage";
 import Home02 from "../assets/home/home_02.jpg";
 import Home04 from "../assets/home/home_04.jpg";
 import Home05 from "../assets/home/home_05.jpg";
 import Home07 from "../assets/home/home_07.jpg";
 import Home08 from "../assets/home/home_08.jpg";
 import Home09 from "../assets/home/home_09.jpg";
-import { IllustrationThumbnail } from "@/components/IllustrationThumbnail";
-import MasonryPage from "@/components/MasonryPage";
-import { IllustrationSlideshow } from "@/components/IllustrationSlideshow";
 
 const illustrationList = [
   Home04,
